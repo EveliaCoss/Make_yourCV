@@ -1,0 +1,198 @@
+---
+title: "Evelia Coss-Navarrete's CV"
+author: Evelia Coss
+date: "`r Sys.Date()`"
+params:
+  pdf_mode:
+    value: true
+output:
+  pagedown::html_resume:
+    css: ['dd_cv.css', 'resume']
+    self_contained: true
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+
+library(magrittr) # For the pipe
+source("cv_printing_functions.r")
+
+# Template https://github.com/nstrayer/datadrivencv/blob/master/inst/templates/cv.Rmd
+# Ultima actualizacion https://github.com/nstrayer/cv/blob/master/cv.Rmd
+
+# Read in all data and initialize a CV printer object
+#CV <- create_CV_object(
+#  data_location = "https://docs.google.com/spreadsheets/d/1NqKZJyykZ1W_qAy8skSY9FH5Vh9ikSiUOuvYSTz_gkc/edit#gid=917338460",  
+#  pdf_mode = params$pdf_mode
+#)
+
+CV <- create_CV_object(
+  data_location = "https://docs.google.com/spreadsheets/d/1NqKZJyykZ1W_qAy8skSY9FH5Vh9ikSiUOuvYSTz_gkc/edit?usp=sharing",  
+  pdf_mode = params$pdf_mode
+ )
+
+```
+
+
+```{r}
+# When in pdf export mode the little dots are unaligned, so fix that with some conditional CSS.
+if(params$pdf_mode) {
+    cat("
+<style>
+:root{
+  --decorator-outer-offset-left: -6.5px;
+}
+</style>")
+}
+```
+
+
+Aside
+================================================================================
+
+```{r}
+# Build interactive network of positions colored by section
+# and connected if they occurred in the same year
+#datadrivencv::build_network_logo(CV$entries_data)
+```
+
+
+```{r}
+#if(params$pdf_mode){
+#  cat("View this CV online with links at _mpadilla905.github.io/cv/_")
+#} else {
+#  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/mpadilla905/mpadilla905.github.io/cv/mpadilla_cv.pdf)")
+#}
+```
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %>% print_contact_info()
+```
+
+<br>
+<br>
+
+Programming Languages {#skills}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %>% print_programming_languages()
+```
+
+<br>
+
+Languages {#skills}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %>% print_languages()
+```
+
+
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
+
+The source code is available at [EveliaCoss/CV](https://github.com/EveliaCoss/CV) and is powered by [nstrayer/cv](https://github.com/nstrayer/cv).
+
+Last updated on `r Sys.Date()`.
+
+
+
+Main
+================================================================================
+
+Evelia Lorena Coss Navarrete {#title}
+--------------------------------------------------------------------------------
+
+```{r}
+# Note the special double pipe so we modify the CV object in place
+CV %<>% print_text_block("intro") 
+```
+
+
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('education')
+```
+
+
+
+Research Experience {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('research_positions')
+```
+
+
+
+<!-- These breaks just force a new page so section doesnt get cut off -->
+<br>
+<br>
+<br>
+
+Teaching Experience {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('teaching_positions')
+```
+
+
+Data Science Writing {data-icon=chart-line}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('data_science_writings')
+```
+
+
+Publications {data-icon=book}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('academic_articles')
+```
+
+
+
+Talks and Posters {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('talks_and_posters')
+```
+
+
+Courses {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('course_attendances')
+```
+
+
+Science Communication {data-icon=atom}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('course_attendances')
+```
+
+
+```{r}
+CV %<>% print_links()
+```
+
