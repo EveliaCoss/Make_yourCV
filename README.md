@@ -55,7 +55,7 @@ Para la generacion de tu script CV.Rmd, puedes descargar como base cualquiera de
 - [Strayer](https://github.com/nstrayer/cv/blob/master/cv.Rmd)
 - [Monica Padilla](https://github.com/mpadilla905/mpadilla905.github.io/blob/master/cv.rmd)
 - [Leonardo Collado](https://github.com/lcolladotor/cv/blob/gh-pages/index.Rmd)
-- Mio - Evelia Coss
+- [Mio - Evelia Coss](https://github.com/EveliaCoss/Make_yourCV/blob/dbed3e34e87e2013115e550845cd5f32e17e515c/cv_ECoss.rmd)
 
 Una vez que lo cargues en Rstudio, entonces podras observar que en el primer chuck o seccion de codigo, encuentras la siguiente informacion:
 
