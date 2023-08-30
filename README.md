@@ -36,6 +36,7 @@ Despues de la instalacion de los paquetes podemos encontrar la explicacion del e
 ### 1. Crea un **Documento en google**
 
 💜 **Nota**: No coloques simbolos raros ni acentos en el archivo.
+
 💜 **Nota**: El archivo de google debes darle acceso de edicion antes de copiar el link.
 
 Puedes basarte en el ejemplo de [Strayer](https://docs.google.com/spreadsheets/d/14MQICF2F8-vf8CKPF1m4lyGKO6_thG-4aSwat1e2TWc/edit#gid=917338460), para lo cual puedes generar un copia en tu archivos de google --> Archivo/Hacer una copia
