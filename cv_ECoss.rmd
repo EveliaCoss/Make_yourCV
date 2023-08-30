@@ -188,7 +188,7 @@ Science Communication {data-icon=atom}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('course_attendances')
+CV %<>% print_section('science_communication')
 ```
 
 
