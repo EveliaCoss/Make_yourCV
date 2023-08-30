@@ -41,7 +41,7 @@ Despues de la instalacion de los paquetes podemos encontrar la explicacion del e
 
 Puedes basarte en el ejemplo de [Strayer](https://docs.google.com/spreadsheets/d/14MQICF2F8-vf8CKPF1m4lyGKO6_thG-4aSwat1e2TWc/edit#gid=917338460), para lo cual puedes generar un copia en tu archivos de google --> Archivo/Hacer una copia
  - Tambien te dejo el ejemplo de [Monica Padilla](https://docs.google.com/spreadsheets/d/1gy4_VaGXhYMi8TwakQGk80dWoYfrSY3Wkl4BqVxECNY/edit#gid=917338460)
- - Y mi [CV](https://docs.google.com/spreadsheets/d/1gy4_VaGXhYMi8TwakQGk80dWoYfrSY3Wkl4BqVxECNY/edit#gid=917338460)
+ - Y mi [CV](https://docs.google.com/spreadsheets/d/1JckGt60BNWheMo23d6bloYLq27h2t5X7hGAXsj0Mlwo/edit?usp=sharing)
 
 El archivo tipo Excel se compone de cuatro Hojas o secciones: *entries, language_skills, text_blocks, contact_info*.
 
@@ -59,7 +59,7 @@ Para la generacion de tu script CV.Rmd, puedes descargar como base cualquiera de
 - [Strayer](https://github.com/nstrayer/cv/blob/master/cv.Rmd)
 - [Monica Padilla](https://github.com/mpadilla905/mpadilla905.github.io/blob/master/cv.rmd)
 - [Leonardo Collado](https://github.com/lcolladotor/cv/blob/gh-pages/index.Rmd)
-- [Mio - Evelia Coss](https://github.com/EveliaCoss/Make_yourCV/blob/dbed3e34e87e2013115e550845cd5f32e17e515c/cv_ECoss.rmd)
+- [Mi archivo, cv_Ecoss.rmd](https://github.com/EveliaCoss/Make_yourCV/blob/9144ab773fe8295208d4a9d0d0572c1085ef73a6/cv_ECoss.rmd)
 
 Una vez que lo cargues en Rstudio, entonces podras observar que en el primer chuck o seccion de codigo, encuentras la siguiente informacion:
 
@@ -101,7 +101,9 @@ The source code is available at [EveliaCoss/CV](https://github.com/EveliaCoss/CV
 
 Hasta este punto tu codigo estaria completo y ejecutable 🌟😎
 
-Sin embargo, si quieres agregar nuevas secciones en tu CV, como por ejemplo "Divulgacion cientifica". En mi ejemplo lo agregue como la seccion *science_communication* en mi [documento](https://docs.google.com/spreadsheets/d/1NqKZJyykZ1W_qAy8skSY9FH5Vh9ikSiUOuvYSTz_gkc/edit?usp=sharing). Luego dentro de mi script coloque el siguiente codigo, para señalar la creaccion de una nueva seccion y de donde debe ser tomada la informacion. 
+#### Crear nueva secccion en el CV
+
+Si quieres agregar nuevas secciones en tu CV, como por ejemplo "Divulgacion cientifica". En mi ejemplo lo agregue como la seccion *science_communication* en mi [documento](https://docs.google.com/spreadsheets/d/1JckGt60BNWheMo23d6bloYLq27h2t5X7hGAXsj0Mlwo/edit?usp=sharing). Luego dentro de mi script coloque el siguiente codigo, para señalar la creaccion de una nueva seccion y de donde debe ser tomada la informacion. 
 
 ```
 Science Communication {data-icon=atom}
@@ -115,7 +117,7 @@ Puedes observar mejor el codigo contenido en el archivo [cv_Ecoss.rmd](https://g
 
 💜 **Nota**: El icono que se quiere emplear por cada seccion se senala con *data-icon* y pueden visualizarse en la pagina web del paquete [fontawesome](https://fontawesome.com/v5/icons/atom?s=solid).
 
-### 3. Obtener pagina web y pdf (render_cv.r)
+### 3. Obtener pagina web y pdf (render_cv.R)
 
 El siguiente codigo se editado y ajustado para la ejecución de mi codigo. La informacion contenida en el archivo [render_cv.R](https://github.com/nstrayer/cv/blob/master/render_cv.R) del mismo paquete contiene errores, por lo que sugiero que empleen el que viene en la pagina web de [datadrivencv](https://nickstrayer.me/datadrivencv/#render_cvr).
 
@@ -146,6 +148,10 @@ pagedown::chrome_print(input = tmp_html_cv_loc,
                        output = "EveliaCoss_cv.pdf")
 
 ```
+
+Para obtener el archivo final de pdf y html solo necesitas tener los archivos previamente mencionados en la misma carpata (documento Google en linea con permisos de Edicion + funcion cv_printing_functions.R descargada + Script editado cv_ECoss.Rmd + Script editado render_cv.R). Finalmente ejecutas el archivo *render_cv.R* y listo 🌟💜.
+
+💜 **Nota**: Puedes subir todos tus archivos en Github para siempre tenerlo disponible.
 
 Y si llegaste al final 🌟💜 y ahora quieres hacer tu propio Github con tus notas y poner emogis, te dejo esta hermosa pagina que encontre con los [emogis](https://gist.github.com/rxaviers/7360908). Solo copialos y pegalos sin miedo 😏. 
 
