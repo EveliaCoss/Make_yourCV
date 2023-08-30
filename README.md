@@ -110,7 +110,7 @@ Science Communication {data-icon=atom}
 --------------------------------------------------------------------------------
 ```
 ```{r}
-CV %<>% print_section('course_attendances')
+CV %<>% print_section('science_communication')
 ```
 
 Puedes observar mejor el codigo contenido en el archivo [cv_Ecoss.rmd](https://github.com/EveliaCoss/Make_yourCV/blob/9144ab773fe8295208d4a9d0d0572c1085ef73a6/cv_ECoss.rmd).
