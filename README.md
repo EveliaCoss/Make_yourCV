@@ -153,7 +153,7 @@ Para obtener el archivo final de pdf y html solo necesitas tener los archivos pr
 
 💜 **Nota**: Puedes subir todos tus archivos en Github para siempre tenerlo disponible.
 
-Y si llegaste al final 🌟💜 y ahora quieres hacer tu propio Github con tus notas y poner emogis, te dejo esta hermosa pagina que encontre con los [emogis](https://gist.github.com/rxaviers/7360908). Solo copialos y pegalos sin miedo 😏. 
+Y si llegaste al final 🌟💜 y ahora quieres hacer tu propio Github con tus notas y poner emogis, te dejo esta hermosa pagina que encontre con los [emojis](https://gist.github.com/rxaviers/7360908). Solo copialos y pegalos sin miedo 😏. 
 
 
 
