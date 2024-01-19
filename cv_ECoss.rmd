@@ -30,7 +30,7 @@ source("cv_printing_functions.r")
 #)
 
 CV <- create_CV_object(
-  data_location = "https://docs.google.com/spreadsheets/d/1NqKZJyykZ1W_qAy8skSY9FH5Vh9ikSiUOuvYSTz_gkc/edit?usp=sharing",  
+  data_location = "https://docs.google.com/spreadsheets/d/1JckGt60BNWheMo23d6bloYLq27h2t5X7hGAXsj0Mlwo/edit?usp=sharing",  
   pdf_mode = params$pdf_mode
  )
 
