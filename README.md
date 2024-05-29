@@ -3,6 +3,8 @@ Make your Curriculum vitae in r | Genera tu Curriculum vitae en R
 
 Notas personales recabadas a partir de los tutoriales y ejemplos 😊. Espero que les funcione 💜
 
+Video interactivo y explicativo conmigo en [YouTube](https://youtu.be/UpQ1PDt49qU?feature=shared).
+
 ## Materiales informativos
 
 - [datadrivencv](https://github.com/nstrayer/datadrivencv) - Tutorial del creador del paquete (cv.Rmd)
